@@ -6,6 +6,8 @@ Create a program that will take a list (of numbers) of any length and return the
 hint: test the program on lists of 0,1,2 + lengths, as well as lists that do and do not meet specifications! 
 
 
+
+
 ________________________________________________________________________________
 Create a Python file named lab_6-6
 
@@ -14,6 +16,8 @@ Construct a list of the 5 input values, in the order that the user gave them.
 Have the program display a list where each index corresponds to the length of the word given by the user at the corresponding index.
 You may assume accurate input values. NO LOOPS
 
+
+
 _________________________________________________________________________________
 Create a Python file named lab_6-7
 Create a program that asks a user to input 3 numeric values
@@ -21,7 +25,13 @@ Construct a list of the 3 input values, in the order that the user gave them.
 Have the program display a list with each of the values as integers that have been doubled 
 You may assume accurate input values.
 
-_________________________________________________________________________________
+
+
+
+
+
+
+
 Create a Python file named lab_6-8
 Create a program that asks a user to input 3 numeric values
 Construct a list of the 3 input values, in the order that the user gave them.
@@ -33,3 +43,13 @@ You may assume accurate input values. You may NOT use a loop.
 
 
 """
+6-5
+def find_extremes(lst):
+    if len(set(lst)) < 2:
+        return 
+    else:
+        return min(lst),max(lst)
+
+my_list= [3, 5, 1, 8, 3,]
+result = find_extremes(my_list)
+print(result)
